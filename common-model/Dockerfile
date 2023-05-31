@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
+FROM adoptopenjdk/openjdk11
 VOLUME /tmp
 ADD target/common-model.jar common-model.jar
 ENTRYPOINT ["java","-jar","/common-model.jar"]
